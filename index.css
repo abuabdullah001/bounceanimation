@@ -1,0 +1,42 @@
+.ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: brown;
+    animation:sliding 2s ease-in-out 0.5s infinite alternate;
+    position: relative;
+     animation-play-state: running;
+
+}
+.stage{
+    width: 500px;
+    height: 300px;
+    background-color: aquamarine;
+}
+@keyframes sliding{
+    0%{
+        background-color:orangered;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        top: 250px;
+        background-color: green;
+        transform: scale(0);
+    }
+    50%{
+        top: 00px;
+        background-color:yellow;
+        transform: scale(1);
+    }
+    75%{
+top: 250px;
+background-color: lightseagreen;
+transform: scale(0);
+    }
+    100%{
+        background-color: darkorange;
+        left:400px;
+        top: 0px;
+    }
+}
